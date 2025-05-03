@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- First row: C, D, E, F -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C" />
+        <Button
+            android:id="@+id/buttonD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:layout_marginStart="8dp" />
+        <Button
+            android:id="@+id/buttonE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:layout_marginStart="8dp" />
+        <Button
+            android:id="@+id/buttonF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Second row: G, A, B -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G" />
+        <Button
+            android:id="@+id/buttonA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:layout_marginStart="8dp" />
+        <Button
+            android:id="@+id/buttonB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Octave control row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/octaveDownButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Octave -" />
+        <TextView
+            android:id="@+id/octaveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Octave: 4"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/octaveUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Octave +"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Record / Play controls -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record" />
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+</LinearLayout>
